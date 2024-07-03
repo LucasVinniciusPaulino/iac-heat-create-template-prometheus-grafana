@@ -52,6 +52,8 @@ O objetivo deste projeto é fornecer uma infraestrutura escalável e monitorada,
     }
 ]
 
+# Contribuições
+Contribuições são bem-vindas via pull requests. Sinta-se à vontade para reportar problemas ou sugerir melhorias para este projeto.
 
 
 
