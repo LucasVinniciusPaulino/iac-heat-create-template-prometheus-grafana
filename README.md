@@ -36,11 +36,12 @@ O objetivo deste projeto é fornecer uma infraestrutura escalável e monitorada,
 - Node Exporter: Implantação do Node Exporter para coletar métricas de hardware e sistema operacional.
 
 # Observações de uso
-Para implantar e utilizar este projeto você precisa de:
+## Para implantar e utilizar este projeto você precisa de:
 - Acesso a uma instalação OpenStack.
 - Conhecimento em administração de redes e instâncias OpenStack.
 - Conhecimento sobre o recurso "Orchestration"
-Para iniciar clone este repositório:
+  
+## Para iniciar clone este repositório:
 - git clone https://github.com/seu-usuario/seu-repositorio.git
 - Modifique os parâmetros no arquivo stack.yml conforme necessário, incluindo IDs de rede, volumes, Key Pairs, Flavor.
 - Não esqueça de alterar o Download do json no server1 e utilizar o que preferir, pode ocorrer o erro "Datasource ${DS_PROMETHEUS} was not found" para ajustar você deve editar o json e achar este trecho para alterar de "DS_PROMETHEUS" para "Prometheus"
