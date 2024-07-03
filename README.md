@@ -1,10 +1,8 @@
 # Projeto de Infraestrutura com Grafana e Prometheus utilizando IAC Heat
 
 # Descrição
-Este projeto utiliza a IAC Heat da OpenStack para provisionar uma infraestrutura completa que inclui Grafana, Prometheus e Node Exporter, este template automatiza a criação de redes, sub-redes, roteadores, grupos de segurança, volumes e servidores, configurando também Prometheus para coletar métricas e Grafana para visualização.
-
-# Objetivo
-O objetivo deste projeto é fornecer uma infraestrutura escalável e monitorada, pronta para uso em ambientes de desenvolvimento e produção na OpenStack. Ele simplifica a criação e o gerenciamento de recursos de monitoramento essenciais para operações contínuas e eficientes.
+Este projeto utiliza a IAC Heat da OpenStack para provisionar uma infraestrutura completa que inclui Grafana, Prometheus e Node Exporter, este template automatiza a criação de redes, sub-redes, roteadores, grupos de segurança, volumes e servidores. Configurando também Prometheus para coletar métricas e Grafana para visualização.
+O objetivo deste projeto é fornecer uma infraestrutura escalável e monitorada, simplificar a criação e o gerenciamento de recursos da openstack.
 
 # Funcionalidades
 - Automatização de Infraestrutura: Utilização do Heat para definir redes, sub-redes, roteadores e grupos de segurança.
