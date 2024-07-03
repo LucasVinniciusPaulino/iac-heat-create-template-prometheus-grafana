@@ -25,6 +25,7 @@ O objetivo deste projeto é fornecer uma infraestrutura escalável e monitorada,
 - Volume de boot: my_vol1, my_vol2, my_vol3
 ## Nova
 - Instance: server1, server2, server3
+- Key Pair: zwmocqvjwufndsa
 ## Recursos server1
 - Prometheus: Configuração do Prometheus para coletar métricas de todos os servidores.
 - Grafana:
