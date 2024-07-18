@@ -20,69 +20,8 @@ parameters:
     description: Flavor for the instances
     default: bc1-basic-1-1
     constraints:
-      - allowed_values: 
-          - bc1-basic-1-1
-          - bc1-basic-1-2
-          - bc1-basic-2-2
-          - bc2-firewall-1-2
-          - bc1-basic-2-4
-          - bc1-essential-2-4
-          - bc1-firewall-2-4
-          - bc1-standard-2-4
-          - bc1-saas-2-4
-          - bc1-coriolis-temporary
-          - bc1-essential-2-8
-          - bc1-essential-4-8
-          - bc1-firewall-2-8
-          - bc1-firewall-4-8
-          - bc1-standard-4-8
-          - bc1-saas-4-8
-          - bc1-sql-2-8
-          - bc1-standard-6-12
-          - bc1-firewall-2-16
-          - bc1-essential-4-16
-          - bc1-firewall-4-16
-          - bc1-highcpu-8-16
-          - bc1-highmem-2-16
-          - bc1-standard-4-16
-          - bc1-standard-8-16
-          - bc1-saas-8-16
-          - bc1-sql-4-16
-          - bc1-sql-8-16
-          - bc1-teste-atix360-12-24
-          - bc1-highcpu-12-24
-          - bc1-premium-8-24
-          - bc1-standard-6-24
-          - bc1-standard-8-24
-          - bc1-sql-6-24
-          - bc1-sql-8-24
-          - bc1-coriolis-temp-2
-          - bc1-highcpu-16-32
-          - bc1-highmem-4-32
-          - bc1-premium-12-32
-          - bc1-premium-8-32
-          - bc1-standard-8-32
-          - bc1-sql-12-32
-          - bc1-sql-16-32
-          - bc1-sql-4-32
-          - bc1-sql-8-32
-          - bc1-highcpu-24-48
-          - bc1-premium-12-48
-          - bc1-sql-12-48
-          - bc1-highcpu-32-64
-          - bc1-highmem-8-64
-          - bc1-premium-16-64
-          - bc1-sql-16-64
-          - bc1-highmem-12-96
-          - bc1-premium-16-96
-          - bc1-highmem-16-128
-          - bc1-premium-32-128
-          - bc1-sql-16-128
-          - bc1-sql-32-128
-          - bc1-highmem-24-192
-          - bc1-highmem-32-256
-        description: Escolha um flavor válido
-
+     - custom_constraint: nova.flavor
+     
   key_name:
     type: string
     description: teste heat key
