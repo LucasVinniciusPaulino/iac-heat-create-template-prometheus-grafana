@@ -25,7 +25,7 @@ parameters:
   key_name:
     type: string
     description: teste heat key
-    default: Escreva o nome da sua Chave
+    default: Chave
     
   image:
     type: string
