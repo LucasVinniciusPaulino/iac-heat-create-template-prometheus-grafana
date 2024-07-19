@@ -132,7 +132,6 @@ resources:
       size: 30
       image: { get_param: image }
 
-
   # Servidores
   server1:
     type: OS::Nova::Server
@@ -140,7 +139,7 @@ resources:
       name: server1
       flavor: { get_param: flavor }
       key_name: { get_param: key_name }
-      security_groups: [ { get_resource: dmz_security_group } ]
+      security_groups: [ { get_resource: dmz_security_group }, "default" ]
       networks: [{ network: { get_resource: dmz_network } }]
       block_device_mapping_v2:
         - volume_id: { get_resource: my_vol1 }
@@ -236,14 +235,13 @@ resources:
             "%server3_ip%": { get_attr: [server3, first_address] }
             "%server1_ip%": { get_attr: [server1_floating_ip, floating_ip_address] }
 
-
   server2:
     type: OS::Nova::Server
     properties:
       name: server2
       flavor: { get_param: flavor }
       key_name: { get_param: key_name }
-      security_groups: [ { get_resource: dmz_security_group } ]
+      security_groups: [ { get_resource: dmz_security_group }, "default" ]
       networks: [{ network: { get_resource: dmz_network } }]
       block_device_mapping_v2:
         - volume_id: { get_resource: my_vol2 }
@@ -262,7 +260,7 @@ resources:
       name: server3
       flavor: { get_param: flavor }
       key_name: { get_param: key_name }
-      security_groups: [ { get_resource: dmz_security_group } ]
+      security_groups: [ { get_resource: dmz_security_group }, "default" ]
       networks: [{ network: { get_resource: dmz_network } }]
       block_device_mapping_v2:
         - volume_id: { get_resource: my_vol3 }
@@ -302,5 +300,3 @@ outputs:
   server1_public_ip:
     description: IP público do servidor 1
     value: { get_attr: [server1_floating_ip, floating_ip_address] }
-
-
