@@ -225,7 +225,7 @@ resources:
 
             # Baixar o JSON do dashboard
             sudo docker exec grafana sh -c "mkdir -p /var/lib/grafana/dashboards"
-            sudo docker exec grafana sh -c "curl -o /var/lib/grafana/dashboards/json_node.json https://raw.githubusercontent.com/LucasVinniciusPaulino/json-dashboard-grafana-heat-iac-2/main/json_node_modified3.json"
+            sudo docker exec grafana sh -c "curl -o /var/lib/grafana/dashboards/json_node.json https://raw.githubusercontent.com/LucasVinniciusPaulino/json-dashboard-grafana-heat-iac-2/main/json_node_modified4.json"
 
             # Reiniciar o Grafana para aplicar as configurações
             sudo docker restart grafana
